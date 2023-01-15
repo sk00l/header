@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+:root{
+    --lavender: #E2D1F9;
+    --teal: #317773;
+}
+
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+.side{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow:hidden;
+    position: absolute;
+}
+
+.side .title{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+.side .fancy{
+    font-family: "Lobster",cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#left-side{
+    background-color: var(--lavender);
+    z-index: 2;
+}
+
+#left-side .title{
+    color: white;
+}
+
+#left-side .fancy{
+    color: var(--teal);
+}
+
+#right-side{
+    background-color: var(--teal);
+}
+
+#right-side .title{
+    color: black;
+}
+
+#right-side .fancy{
+    color: var(--lavender);
+}
